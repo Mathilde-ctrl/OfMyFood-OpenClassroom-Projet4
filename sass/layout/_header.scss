@@ -1,0 +1,22 @@
+@use '../utilities';
+
+header{
+  background-color: utilities.$neutral-second-color;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  nav{
+    position: absolute;
+    left: 5%;
+    //display: none;
+    i{
+      color:utilities.$neutral-fourth-color;
+    }
+  }
+  img{
+    height: 35px;
+  } 
+}
+

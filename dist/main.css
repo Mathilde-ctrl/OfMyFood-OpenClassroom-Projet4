@@ -26,4 +26,28 @@ body {
   padding: 0;
   margin: 0;
   background-color: #F6F6F6;
+  width: 100%;
+}
+
+header {
+  background-color: #FFFFFF;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header nav {
+  position: absolute;
+  left: 5%;
+}
+header nav i {
+  color: #353535;
+}
+header img {
+  height: 35px;
+}
+
+.main-container {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
