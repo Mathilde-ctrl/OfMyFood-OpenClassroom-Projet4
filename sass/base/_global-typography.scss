@@ -1,17 +1,21 @@
+@use '../utilities';
+
 h1{
   font-family: 'Shrikhand', cursive;
-}
-//font-family: 'Roboto', sans-serif;
-//font-family: 'Shrikhand', cursive;
-
-h1, h2, h3{ //multiple selectors
-  font-weight: 700;
-  margin-top: 0;
+  color: utilities.$main-color;
 }
 
 p{
+  font-family: 'Roboto', sans-serif;
   margin-top: 0;
 }
+
+
+h1, h2, h3{ //multiple selectors
+  margin-top: 0;
+}
+
+
 
 a, a:visited, a:active{ //remove the defaut text underline that browsers use
   text-decoration: none;

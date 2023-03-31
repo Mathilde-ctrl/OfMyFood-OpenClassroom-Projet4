@@ -1,1 +1,6 @@
-@forward 'globals'; //will look automaticly in the _index.scss file that is place in globals
+//will look automaticly in the _index.scss file that is place in globals
+@forward 'base'; //reset, global-typography,
+@forward 'utilities'; //variables, mixinx, fonctions, 
+@forward 'components'; //buttons, cards, forms, 
+@forward 'layout'; //footer, header, index, 
+@forward 'pages'; //homepage, menu
