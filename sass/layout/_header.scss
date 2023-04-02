@@ -3,10 +3,14 @@
 header{
   background-color: utilities.$neutral-second-color;
   height: 63px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: relative;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
   nav{
     position: absolute;
     left: 5%;
@@ -16,7 +20,7 @@ header{
     }
   }
   img{
-    height: 35px;
+    height: 30px;
   } 
 }
 

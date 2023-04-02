@@ -1,0 +1,41 @@
+@use '../utilities';
+
+// Section
+.localisation{
+  background-color: utilities.$neutral-third-color;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i{
+    margin-right: 17px;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+
+// Section
+.informations{
+  text-align: center;
+  margin-bottom: 57px;
+  h2{
+   margin:39.5px 58px 20px 42px;
+  }
+  p{
+    margin: 0px 26px 27px 34px;
+    font-weight: 300;
+  }
+}
+
+// Section 
+.how-to{
+  background-color: utilities.$neutral-second-color;
+  padding: 48px 20px 68px 20px;
+  .how-to__card{
+   margin-left: 12px;
+  }
+
+
+}

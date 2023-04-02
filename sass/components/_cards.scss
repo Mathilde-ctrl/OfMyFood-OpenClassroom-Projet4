@@ -1,0 +1,12 @@
+@use '../utilities';
+
+//HomePage card
+.how-to__card{
+  background-color: utilities.$neutral-main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 38px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}

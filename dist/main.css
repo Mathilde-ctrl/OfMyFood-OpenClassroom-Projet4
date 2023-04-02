@@ -6,14 +6,21 @@ h1 {
 p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1, h2, h3 {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 a, a:visited, a:active {
   text-decoration: none;
+  color: black;
 }
 
 html {
@@ -29,6 +36,23 @@ body {
   width: 100%;
 }
 
+.cta {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 13px 18.75px;
+  color: white;
+  border-radius: 25px;
+}
+
+.how-to__card {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 38px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
 header {
   background-color: #FFFFFF;
   height: 63px;
@@ -36,6 +60,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 header nav {
   position: absolute;
@@ -45,9 +70,43 @@ header nav i {
   color: #353535;
 }
 header img {
-  height: 35px;
+  height: 30px;
 }
 
 .main-container {
   width: 100%;
+}
+
+.localisation {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation i {
+  margin-right: 17px;
+}
+.localisation p {
+  font-size: 16px;
+}
+
+.informations {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.informations h2 {
+  margin: 39.5px 58px 20px 42px;
+}
+.informations p {
+  margin: 0px 26px 27px 34px;
+  font-weight: 300;
+}
+
+.how-to {
+  background-color: #FFFFFF;
+  padding: 48px 20px 68px 20px;
+}
+.how-to .how-to__card {
+  margin-left: 12px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+@use '../utilities';
+
+// cta buttons
+.cta{
+  background: linear-gradient( utilities.$second-color ,utilities.$main-color );
+  padding: 13px 18.75px;
+  color: white;
+  border-radius:25px;
+  
+}
