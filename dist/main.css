@@ -1,7 +1,7 @@
 h1 {
   font-family: "Shrikhand", cursive;
-  color: #9356DC;
   line-height: 40.82px;
+  font-style: italic;
 }
 
 p {
@@ -183,6 +183,38 @@ header img {
   height: 30px;
 }
 
+footer {
+  padding: 22px 25px;
+  background: #353535;
+}
+footer .footer__title {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+footer .footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer__links a {
+  color: #FFFFFF;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer .footer__links a i {
+  margin-right: 11px;
+  width: 11px;
+}
+footer .footer__links a:nth-child(2) i {
+  transform: rotate(-35deg);
+}
+footer .footer__links a:nth-child(3), footer .footer__links a:nth-child(4) {
+  font-weight: 400;
+}
+
 .main-container {
   width: 100%;
 }
@@ -219,5 +251,5 @@ header img {
 }
 
 .restaurants {
-  padding: 20px;
+  padding: 54px 20px 66px 20px;
 }/*# sourceMappingURL=main.css.map */
