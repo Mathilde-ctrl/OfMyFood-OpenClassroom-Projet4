@@ -3,6 +3,7 @@
 h1{
   font-family: 'Shrikhand', cursive;
   color: utilities.$main-color;
+  line-height: 40.82px;
 }
 
 p{
@@ -19,11 +20,17 @@ h1, h2, h3{ //multiple selectors
 h2{
   font-size: 24px;
   font-weight: 700;
+  line-height: 28.13px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
 }
 
 
 a, a:visited, a:active{ //remove the defaut text underline that browsers use
   text-decoration: none;
-  color: black;
-
+  
 }

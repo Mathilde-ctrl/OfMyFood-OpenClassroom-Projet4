@@ -1,0 +1,95 @@
+@use '../utilities';
+
+//Restaurants
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: utilities.$neutral-second-color;
+  color: rgb(0, 0, 0);
+
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  
+  height: 251px;
+
+  position: relative;
+  margin-bottom: 18px;
+
+  .card__content{
+    width: 100%;
+  }
+
+  .card__image{
+    height: 174px;
+    width: 100%;
+    object-fit: cover;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    margin-bottom: 16px;
+  }
+
+  .card__info {
+    padding-left: 13px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+  }
+      
+  .card__title {
+    margin-bottom: 5px;
+   
+  }
+      
+  .card__location {
+    margin: 0;
+    font-weight: 300;
+  }
+      
+  .card__icon {
+    margin-right: 25px;
+    position: relative;
+
+  }
+      
+  .card__badge {
+    margin: 0;
+    padding: 7px 9px;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+
+    background-color: utilities.$third-color;
+    color: utilities.$fourth-color;
+
+    font-size: 14px;
+    font-weight: 500;
+  
+  }
+}
+
+//Position of img in the cards
+
+.card-1 img{
+  object-position: 100% 30%;
+}
+
+.card-2 img{
+  object-position: 100% 60%;
+}
+
+.card-3 img{
+  object-position: 100% 80%;
+}
+
+.card-4 img{
+  object-position: 100% 90%;
+}

@@ -1,6 +1,7 @@
 h1 {
   font-family: "Shrikhand", cursive;
   color: #9356DC;
+  line-height: 40.82px;
 }
 
 p {
@@ -16,11 +17,17 @@ h1, h2, h3 {
 h2 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 28.13px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
 }
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: black;
 }
 
 html {
@@ -41,6 +48,7 @@ body {
   padding: 13px 18.75px;
   color: white;
   border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .how-to__card {
@@ -50,7 +58,109 @@ body {
   align-items: center;
   padding: 28px 38px;
   border-radius: 20px;
+  margin-left: 12px;
   margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.how-to__card .icon-number {
+  position: absolute;
+  left: -14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-to__card .fa-solid {
+  position: absolute;
+  left: 10%;
+}
+.how-to__card .color1 {
+  color: #7E7E7E;
+}
+.how-to__card .color2 {
+  color: #9356DC;
+}
+
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: 251px;
+  position: relative;
+  margin-bottom: 18px;
+}
+.restaurants__card .card__content {
+  width: 100%;
+}
+.restaurants__card .card__image {
+  height: 174px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-bottom: 16px;
+}
+.restaurants__card .card__info {
+  padding-left: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.restaurants__card .card__title {
+  margin-bottom: 5px;
+}
+.restaurants__card .card__location {
+  margin: 0;
+  font-weight: 300;
+}
+.restaurants__card .card__icon {
+  margin-right: 25px;
+  position: relative;
+}
+.restaurants__card .card__badge {
+  margin: 0;
+  padding: 7px 9px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-1 img {
+  -o-object-position: 100% 30%;
+     object-position: 100% 30%;
+}
+
+.card-2 img {
+  -o-object-position: 100% 60%;
+     object-position: 100% 60%;
+}
+
+.card-3 img {
+  -o-object-position: 100% 80%;
+     object-position: 100% 80%;
+}
+
+.card-4 img {
+  -o-object-position: 100% 90%;
+     object-position: 100% 90%;
 }
 
 header {
@@ -107,6 +217,7 @@ header img {
   background-color: #FFFFFF;
   padding: 48px 20px 68px 20px;
 }
-.how-to .how-to__card {
-  margin-left: 12px;
+
+.restaurants {
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
