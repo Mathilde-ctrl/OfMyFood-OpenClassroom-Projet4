@@ -40,4 +40,13 @@ footer{
       }
     }
   }
+  .logo-color {
+    height: 27px;
+    margin-bottom: 16px;
+    filter: invert(1) brightness(200%);
+    //invert(1):invert the colors, making it a negative. 
+    //The value 1 represents the maximum value of the filter.
+
+    //Increase the brightness.
+  }
 }

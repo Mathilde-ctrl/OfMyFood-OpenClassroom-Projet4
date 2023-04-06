@@ -49,6 +49,10 @@ body {
   color: white;
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease-in-out;
+}
+.cta:hover {
+  opacity: 0.85;
 }
 
 .how-to__card {
@@ -144,8 +148,8 @@ body {
 }
 
 .card-1 img {
-  -o-object-position: 100% 30%;
-     object-position: 100% 30%;
+  -o-object-position: 100% 40%;
+     object-position: 100% 40%;
 }
 
 .card-2 img {
@@ -213,6 +217,11 @@ footer .footer__links a:nth-child(2) i {
 }
 footer .footer__links a:nth-child(3), footer .footer__links a:nth-child(4) {
   font-weight: 400;
+}
+footer .logo-color {
+  height: 27px;
+  margin-bottom: 16px;
+  filter: invert(1) brightness(200%);
 }
 
 .main-container {
