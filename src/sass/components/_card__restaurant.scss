@@ -29,8 +29,8 @@
   }
 
   .card__image{
-    height: 174px;
     width: 100%;
+    height: 174px;
     object-fit: cover;
 
     border-top-right-radius: 15px;
@@ -47,12 +47,10 @@
     align-items: center;
 
     box-sizing: border-box;
-
   }
       
   .card__title {
     margin-bottom: 5px;
-   
   }
       
   .card__location {
@@ -63,7 +61,6 @@
   .card__icon {
     margin-right: 25px;
     position: relative;
-
   }
       
   .card__badge {
@@ -80,7 +77,6 @@
 
     font-size: 14px;
     font-weight: 500;
-  
   }
 }
 

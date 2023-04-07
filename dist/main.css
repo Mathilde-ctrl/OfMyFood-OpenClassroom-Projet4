@@ -1,7 +1,8 @@
 h1 {
   font-family: "Shrikhand", cursive;
   line-height: 40.82px;
-  font-style: italic;
+  font-weight: 400;
+  margin: 0;
 }
 
 p {
@@ -24,6 +25,12 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.09px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 a, a:visited, a:active {
@@ -152,8 +159,8 @@ body {
   width: 100%;
 }
 .restaurants__card .card__image {
-  height: 174px;
   width: 100%;
+  height: 174px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-right-radius: 15px;
@@ -380,4 +387,38 @@ footer .logo-color {
 
 .restaurants {
   padding: 54px 20px 66px 20px;
+}
+
+.menu__restaurant img {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.menu__restaurant form {
+  background: #F6F6F6;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px 13px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  position: absolute;
+  top: 45%;
+}
+.menu__restaurant form .menu__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__restaurant form .menu__title .card__icon {
+  margin-right: 20px;
+}
+.menu__restaurant form .menu__subtitles .menu__subtitles-name {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.menu__restaurant form .menu__subtitles .menu__line {
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }/*# sourceMappingURL=main.css.map */

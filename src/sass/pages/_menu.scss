@@ -1,0 +1,46 @@
+@use '../utilities';
+
+.menu__restaurant{
+  img{
+    height: 275px ;
+    width: 100%;
+    object-fit: cover;
+
+    position: relative;
+  }
+
+  form{
+    background: utilities.$neutral-main-color;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 32px 13px;
+    border-top-right-radius: 40px ;
+    border-top-left-radius: 40px ;
+
+    position: absolute;
+    top: 45%;
+
+    .menu__title{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .card__icon{
+        margin-right: 20px;
+      }
+    }
+
+    .menu__subtitles{
+      .menu__subtitles-name{
+        margin-top: 30px;
+        margin-bottom: 5px;
+      }
+
+      .menu__line {
+        border-bottom: 3px solid utilities.$third-color;
+        width: 40px;
+      }
+    }
+  }
+}
