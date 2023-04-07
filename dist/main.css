@@ -44,12 +44,19 @@ body {
 }
 
 .cta {
+  display: inline-block;
+  color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 13px 18.75px;
-  color: white;
+  margin-bottom: 57px;
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 767.98px) {
+  .cta {
+    margin-bottom: 30px;
+  }
 }
 .cta:hover {
   opacity: 0.85;
@@ -66,6 +73,19 @@ body {
   margin-bottom: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
+}
+@media (min-width: 767.98px) {
+  .how-to__card {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 50%;
+  }
+}
+@media (min-width: 1023.98px) {
+  .how-to__card {
+    width: 23%;
+    margin-bottom: 0;
+  }
 }
 .how-to__card .icon-number {
   position: absolute;
@@ -94,6 +114,20 @@ body {
   color: #9356DC;
 }
 
+@media (min-width: 1023.98px) {
+  .how-to__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .how-to__title {
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+}
 .restaurants__card {
   display: flex;
   flex-direction: column;
@@ -102,8 +136,17 @@ body {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   height: 251px;
+  max-width: 490px;
+  margin: auto;
   position: relative;
   margin-bottom: 18px;
+}
+@media (min-width: 1023.98px) {
+  .restaurants__card {
+    margin-bottom: 50px;
+    width: 45%;
+    margin-left: 0;
+  }
 }
 .restaurants__card .card__content {
   width: 100%;
@@ -161,12 +204,30 @@ body {
   -o-object-position: 100% 80%;
      object-position: 100% 80%;
 }
+.card-3 .card__badge {
+  display: none;
+}
 
 .card-4 img {
   -o-object-position: 100% 90%;
      object-position: 100% 90%;
 }
+.card-4 .card__badge {
+  display: none;
+}
 
+@media (min-width: 767.98px) {
+  .restaurants {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+@media (min-width: 1023.98px) {
+  .restaurants__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 header {
   background-color: #FFFFFF;
   height: 63px;
@@ -186,27 +247,47 @@ header nav i {
 header img {
   height: 30px;
 }
+@media (min-width: 1023.98px) {
+  header {
+    box-shadow: none;
+  }
+}
 
 footer {
   padding: 22px 25px;
   background: #353535;
 }
-footer .footer__title {
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 16px;
+@media (min-width: 767.98px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 114px;
+    box-sizing: border-box;
+  }
 }
 footer .footer__links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+@media (min-width: 767.98px) {
+  footer .footer__links {
+    flex-direction: row;
+  }
+}
 footer .footer__links a {
   color: #FFFFFF;
   margin-bottom: 7px;
   font-weight: 500;
   font-size: 16px;
+}
+@media (min-width: 767.98px) {
+  footer .footer__links a {
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
 }
 footer .footer__links a i {
   margin-right: 11px;
@@ -215,6 +296,11 @@ footer .footer__links a i {
 footer .footer__links a:nth-child(2) i {
   transform: rotate(-35deg);
 }
+@media (min-width: 767.98px) {
+  footer .footer__links a:nth-child(2) {
+    margin-right: 50px;
+  }
+}
 footer .footer__links a:nth-child(3), footer .footer__links a:nth-child(4) {
   font-weight: 400;
 }
@@ -222,6 +308,17 @@ footer .logo-color {
   height: 27px;
   margin-bottom: 16px;
   filter: invert(1) brightness(200%);
+  /*invert(1):invert the colors, making it a negative.
+    The value 1 represents the maximum value of the filter
+    Increase the brightness.
+  */
+}
+@media (min-width: 767.98px) {
+  footer .logo-color {
+    margin-bottom: 0;
+    margin-left: 25px;
+    height: 19px;
+  }
 }
 
 .main-container {
@@ -244,19 +341,41 @@ footer .logo-color {
 
 .informations {
   text-align: center;
-  margin-bottom: 57px;
 }
 .informations h2 {
-  margin: 39.5px 58px 20px 42px;
+  margin-top: 39.5px;
+  padding: 0 58px 0 42px;
+}
+@media (min-width: 767.98px) {
+  .informations h2 {
+    margin-top: 30px;
+    padding: 0;
+  }
+}
+@media (min-width: 1023.98px) {
+  .informations h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
 }
 .informations p {
   margin: 0px 26px 27px 34px;
   font-weight: 300;
 }
+@media (min-width: 1023.98px) {
+  .informations p {
+    font-size: 18px;
+  }
+}
 
 .how-to {
   background-color: #FFFFFF;
   padding: 48px 20px 68px 20px;
+}
+@media (min-width: 767.98px) {
+  .how-to {
+    padding-bottom: 50px;
+  }
 }
 
 .restaurants {

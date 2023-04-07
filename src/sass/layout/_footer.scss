@@ -1,18 +1,18 @@
 @use '../utilities';
 
 
-
-
 footer{
   padding: 22px 25px;
   background: utilities.$neutral-fourth-color;
 
-  .footer__title{
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
+  @media (min-width:767.98px){
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 114px;
+    box-sizing: border-box;
     
-    margin-bottom: 16px;
   }
 
   .footer__links{ 
@@ -20,19 +20,35 @@ footer{
     flex-direction: column;
     align-items: flex-start; //to have the cursor pointer only on the link
 
+    @media (min-width:767.98px){
+      flex-direction: row;
+      
+    }
+
     a{
     color: utilities.$neutral-second-color;
     margin-bottom: 7px;
     font-weight: 500;
     font-size: 16px;
 
+    @media (min-width:767.98px){
+      margin-bottom: 0;
+      margin-right: 25px;
+    }  
+
       i{ //space between icon and texte
         margin-right: 11px;
         width: 11px;
       }
 
-      &:nth-child(2) i{
-        transform: rotate(-35deg);
+      &:nth-child(2){ 
+        i{
+          transform: rotate(-35deg);
+        }
+
+        @media (min-width:767.98px){
+          margin-right: 50px;
+        }
       }
 
       &:nth-child(3), &:nth-child(4) {
@@ -44,9 +60,14 @@ footer{
     height: 27px;
     margin-bottom: 16px;
     filter: invert(1) brightness(200%);
-    //invert(1):invert the colors, making it a negative. 
-    //The value 1 represents the maximum value of the filter.
-
-    //Increase the brightness.
+    /*invert(1):invert the colors, making it a negative.
+      The value 1 represents the maximum value of the filter
+      Increase the brightness.
+    */
+    @media (min-width:767.98px){
+      margin-bottom: 0;
+      margin-left: 25px;
+      height: 19px;
+    }
   }
 }

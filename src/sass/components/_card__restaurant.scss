@@ -12,9 +12,17 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   
   height: 251px;
+  max-width: 490px;
+  margin: auto;
 
   position: relative;
   margin-bottom: 18px;
+
+  @media (min-width:1023.98px){
+    margin-bottom: 50px;
+    width: 45%;
+    margin-left: 0;
+  }
 
   .card__content{
     width: 100%;
@@ -76,20 +84,49 @@
   }
 }
 
-//Position of img in the cards
+//Img positions and Badges in cards
 
-.card-1 img{
-  object-position: 100% 40%;
+.card-1{
+  img{
+    object-position: 100% 40%;
+  }
 }
 
-.card-2 img{
-  object-position: 100% 60%;
+.card-2{ 
+  img{
+    object-position: 100% 60%;
+  }
 }
 
-.card-3 img{
-  object-position: 100% 80%;
+.card-3{
+  img{
+    object-position: 100% 80%;
+  }
+  .card__badge{
+    display: none;
+  }
 }
 
-.card-4 img{
-  object-position: 100% 90%;
+.card-4 {
+  img{
+    object-position: 100% 90%;
+  }
+  .card__badge{
+    display: none;
+  }
+}
+
+@media (min-width:767.98px){
+  .restaurants{
+    max-width: 1024px;
+    margin: auto;
+    
+  }
+}
+
+@media (min-width:1023.98px){
+  .restaurants__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

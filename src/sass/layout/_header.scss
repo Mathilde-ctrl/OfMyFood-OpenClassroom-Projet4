@@ -22,5 +22,8 @@ header{
   img{
     height: 30px;
   } 
+  @media (min-width:1023.98px){
+    box-shadow: none;
+   }
 }
 
