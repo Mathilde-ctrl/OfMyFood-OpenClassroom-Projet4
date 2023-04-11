@@ -260,16 +260,11 @@ body {
   align-items: flex-end;
   width: 100%;
   position: relative;
-  /*.menu__dish--description{
-    overflow: hidden;
-    white-space:nowrap;
-    text-overflow: ellipsis;
-    object-fit: contain;
-  }*/
 }
 .menu__card .menu__dish .menu__dish--price {
   position: absolute;
   right: 5%;
+  padding-left: 5px;
 }
 .menu__card .menu__checkbox {
   height: 69px;
@@ -292,10 +287,44 @@ body {
   z-index: 1;
 }
 
+/************HOVER******************/
 .menu__card:hover .menu__checkbox {
   display: flex;
 }
+.menu__card:hover .menu__dish--description h5 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 225px;
+}
+@media (min-width: 374.98px) {
+  .menu__card:hover .menu__dish--description h5 {
+    width: 280px;
+  }
+}
+@media (min-width: 424.98px) {
+  .menu__card:hover .menu__dish--description h5 {
+    width: 320px;
+  }
+}
+.menu__card:hover .menu__dish--description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 185px;
+}
+@media (min-width: 374.98px) {
+  .menu__card:hover .menu__dish--description p {
+    width: 240px;
+  }
+}
+@media (min-width: 424.98px) {
+  .menu__card:hover .menu__dish--description p {
+    width: 290px;
+  }
+}
 
+/***************ACTIVE****************/
 .menu__card:active {
   order: -1;
   flex-direction: row-reverse;
