@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/f3fe98a041.js" crossorigin="anonymous"></script>
-
+  
   <link rel="stylesheet" href="../../dist/main.css">
   
   <title>ohmyfood - Menu - La palette du goût</title>
@@ -36,9 +36,30 @@
           <h4 class="menu__subtitles-name">Entrées</h4>
           <div class="menu__line"></div>
         </div>
-        <div>
-          
+        <div class="menu__card">
+          <div class="menu__dish">
+            <div class="menu__dish--description">
+              <h5>Fricassée d'escargots</h5>
+              <p>Au piment d'Espelette</p>
+            </div>
+            <div class="menu__dish--price">
+              <p>25<span>€</span></p>
+            </div>
+          </div>
+          <div class="menu__checkbox">
+            <i class="fa-solid fa-check"></i>
+            <i class="fa-solid fa-circle fa-lg"></i>
+          </div>
         </div>
+        <!--<script>
+          const cards = document.querySelectorAll('.menu__card');
+
+          cards.forEach(card => {
+            card.addEventListener('click', () => {
+            card.classList.toggle('active');
+            });
+          });
+        </script>-->
       </form>
     </section>
     </div>

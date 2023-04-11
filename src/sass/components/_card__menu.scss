@@ -1,0 +1,83 @@
+@use '../utilities';
+
+.menu__card{
+  background-color: utilities.$neutral-second-color;
+
+  margin: 12px 0;
+  padding: 12px 15px;
+  padding-right: 0;
+  border-radius: 15px;
+  height: 69px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  cursor: pointer;
+
+  .menu__dish{
+    display: flex;
+    align-items: flex-end; 
+    width: 100%;
+    position: relative;
+
+    /*.menu__dish--description{
+      overflow: hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+      object-fit: contain;
+    }*/
+
+    .menu__dish--price{
+      position: absolute;
+      right: 5%;
+    }
+  }
+
+  .menu__checkbox{
+    height: 69px;
+    width: 59px;
+    
+    background: utilities.$third-color;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    order:1;
+
+    .fa-circle{
+      color: white;
+      position: relative;
+    }
+    .fa-check{
+      color: utilities.$third-color;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
+
+.menu__card:hover .menu__checkbox{
+  display: flex;
+}
+
+.menu__card:active{ 
+  order: -1;
+  flex-direction: row-reverse;
+  padding-left: 0;
+
+  .menu__checkbox{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  margin-right: 15px;
+  }
+
+}
