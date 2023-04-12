@@ -1,6 +1,7 @@
 @use '../utilities';
 
 .menu__restaurant{
+  
   img{
     height: 275px ;
     width: 100%;
@@ -19,7 +20,11 @@
     border-top-left-radius: 40px ;
 
     position: absolute;
-    top: 45%;
+    top: 280px;
+    
+    display: flex;
+    flex-direction: column;
+    
 
     .menu__title{
       display: flex;
@@ -42,5 +47,17 @@
         width: 40px;
       }
     }
+    button{
+      margin: auto;
+      width: 186px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+    }
   }
+}
+
+footer{
+  margin-top: 1100px ; 
+  //if not my footer is going under my img 
 }

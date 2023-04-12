@@ -5,6 +5,7 @@
 .cta{
   display: inline-block;
   
+  border: 0;
   color: white;
   background: linear-gradient( utilities.$second-color ,utilities.$main-color );
   
@@ -24,3 +25,4 @@
   }
   
 }
+

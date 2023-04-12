@@ -19,24 +19,33 @@
 
   .menu__dish{
     display: flex;
-    align-items: flex-end; 
+    align-items:flex-end;
     width: 100%;
     position: relative;
 
     .menu__dish--price{
       position: absolute;
+      display: flex;//
       right: 5%;
       padding-left: 5px;
     }
+
+    .menu__dish--description p{
+      width: 220px ;
+
+      @media (min-width:374.98px){
+        width: 100%;
+      }
+    }
+    
   }
 
   .menu__checkbox{
     height: 69px;
-    width: 59px;
     
     background: utilities.$third-color;
 
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-top-right-radius: 15px;
@@ -47,19 +56,29 @@
     .fa-circle{
       color: white;
       position: relative;
+      display: none;
     }
     .fa-check{
       color: utilities.$third-color;
       position: absolute;
       z-index: 1;
+      display: none;
     }
   }
 }
-/************HOVER******************/
+
+/*********************HOVER text menu card******************/
+.menu__checkbox{
+  width: 0;
+  transition: width 0.25s ease-in-out;
+}
+
 .menu__card:hover{ 
   .menu__checkbox{
     display: flex;
+    width: 59px ;
   }
+
   .menu__dish--description h5 {
     overflow: hidden;
     white-space:nowrap;
@@ -87,9 +106,12 @@
       width:290px ;
     }
   }
+  .fa-check, .fa-circle{
+    display: flex;
+  }
 }
 
-/***************ACTIVE****************/
+/************************ACTIVE menu card**********************/
 .menu__card:active{ 
   order: -1;
   flex-direction: row-reverse;
@@ -103,7 +125,61 @@
 
   margin-right: 15px;
   }
-
-  
-
 }
+
+/*************************ANIMATION Opacity menu card*************************/
+
+
+.menu__starters, .menu__meals, .menu__desserts, .menu__card {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu__starters{
+  animation-delay: 0.25s;
+
+  .starter2 {
+    animation-delay: 0.35s;
+  }
+  
+  .starter3 {
+    animation-delay: 0.45s;
+  }
+}
+
+.menu__meals{
+  animation-delay: 0.65s;
+
+  .meal2{
+    animation-delay: 0.75s ;
+  }
+
+  .meal3{
+    animation-delay: 0.85s ;
+  }
+}
+
+.menu__desserts{
+  animation-delay: 1.05s;
+
+  .dessert2{
+    animation-delay: 1.15s;
+  }
+
+  .dessert3{
+    animation-delay: 1.25s;
+  }
+}
+
+
+
+
