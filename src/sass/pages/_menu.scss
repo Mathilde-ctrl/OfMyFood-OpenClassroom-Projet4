@@ -7,7 +7,8 @@
     width: 100%;
     object-fit: cover;
 
-    position: relative;
+
+    //position: relative;
   }
 
   form{
@@ -18,9 +19,12 @@
     padding: 32px 13px;
     border-top-right-radius: 40px ;
     border-top-left-radius: 40px ;
+ 
+    //position: absolute;
+    //top: 280px;
 
-    position: absolute;
-    top: 280px;
+    margin-top: -40px;
+    position: relative;
     
     display: flex;
     flex-direction: column;
@@ -30,7 +34,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      
       .card__icon{
         margin-right: 20px;
       }
@@ -57,7 +61,3 @@
   }
 }
 
-footer{
-  margin-top: 1100px ; 
-  //if not my footer is going under my img 
-}

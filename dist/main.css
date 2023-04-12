@@ -574,7 +574,6 @@ footer .logo-color {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
 }
 .menu__restaurant form {
   background: #F6F6F6;
@@ -583,8 +582,8 @@ footer .logo-color {
   padding: 32px 13px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-  position: absolute;
-  top: 280px;
+  margin-top: -40px;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -609,8 +608,4 @@ footer .logo-color {
   width: 186px;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-footer {
-  margin-top: 1100px;
 }/*# sourceMappingURL=main.css.map */
