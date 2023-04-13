@@ -70,7 +70,7 @@
 /*********************HOVER text menu card******************/
 .menu__checkbox{
   width: 0;
-  transition: width 0.25s ease-in-out;
+  transition: width 0.25s cubic-bezier(.22,.76,.69,.93);
 }
 
 .menu__card:hover{ 
@@ -111,12 +111,20 @@
   }
 }
 
+.menu__card:not(:hover) {
+  .menu__checkbox {
+    width: 0;
+    transition: width 0.25s cubic-bezier(.88,.26,1,.81);
+  }
+}
+
 /************************ACTIVE menu card**********************/
 .menu__card:active{ 
   order: -1;
   flex-direction: row-reverse;
   padding-left: 0;
 
+  
   .menu__checkbox{
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -124,6 +132,23 @@
   border-bottom-left-radius: 15px;
 
   margin-right: 15px;
+  
+  animation: slideLeft 0.4s ease-in-out;
+  }
+}
+
+@keyframes slideLeft{
+  0% {
+    transform: translateX(80vw);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 

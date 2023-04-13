@@ -359,7 +359,7 @@ body {
 /*********************HOVER text menu card******************/
 .menu__checkbox {
   width: 0;
-  transition: width 0.25s ease-in-out;
+  transition: width 0.25s cubic-bezier(0.22, 0.76, 0.69, 0.93);
 }
 
 .menu__card:hover .menu__checkbox {
@@ -402,6 +402,11 @@ body {
   display: flex;
 }
 
+.menu__card:not(:hover) .menu__checkbox {
+  width: 0;
+  transition: width 0.25s cubic-bezier(0.88, 0.26, 1, 0.81);
+}
+
 /************************ACTIVE menu card**********************/
 .menu__card:active {
   order: -1;
@@ -414,8 +419,23 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-right: 15px;
+  animation: slideLeft 0.4s ease-in-out;
 }
 
+@keyframes slideLeft {
+  0% {
+    transform: translateX(80vw);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 /*************************ANIMATION Opacity menu card*************************/
 .menu__starters, .menu__meals, .menu__desserts, .menu__card {
   opacity: 0;
