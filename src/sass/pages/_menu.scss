@@ -23,7 +23,7 @@
     //position: absolute;
     //top: 280px;
 
-    margin-top: -40px;
+    margin-top: -40px; //pbm with footer if use position absolute
     position: relative;
     
     display: flex;
@@ -37,6 +37,7 @@
       
       .card__icon{
         margin-right: 20px;
+        
       }
     }
 

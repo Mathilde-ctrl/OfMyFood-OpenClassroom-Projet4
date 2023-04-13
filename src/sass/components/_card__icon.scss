@@ -1,6 +1,52 @@
 @use '../utilities';
 
+/*****************Animation icon ************/
 .card__icon{
-  //
+  line-height: 1.5em; //keep the icon fully visible
+  position: relative;//keep the active icon in it place on menu
 }
 
+.neutral-icon {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  //start
+}
+
+.active-icon {
+  position: absolute;
+  top: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+  
+  background: -webkit-linear-gradient(utilities.$main-color, utilities.$second-color);
+  -webkit-background-clip: text;
+  background-clip: text;//define the standard property for compatibility
+  -webkit-text-fill-color: transparent;
+  //end
+}
+
+.card__icon:hover {
+  animation: headshake 0.3s ease-in-out;
+  animation-iteration-count: 2;
+  animation-delay: 0.3s;
+
+  .active-icon {
+    opacity: 1;
+    height: 100%;
+  }
+
+  .neutral-icon {
+    opacity: 0;
+  }
+}
+
+@keyframes headshake {
+  25% {
+      transform: translateY(utilities.$shake-intensity);
+  }
+  75% {
+      transform: translateY(utilities.$shake-intensity * -1);
+  }
+}
