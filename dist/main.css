@@ -419,12 +419,50 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-right: 15px;
-  animation: slideLeft 0.4s ease-in-out;
+  animation: slideLeftMobile 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .menu__card:active .menu__checkbox {
+    animation: slideLeftTablet 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1439.98px) {
+  .menu__card:active .menu__checkbox {
+    animation: slideLeftLaptop 0.5s ease-in-out;
+  }
 }
 
-@keyframes slideLeft {
+@keyframes slideLeftMobile {
   0% {
     transform: translateX(80vw);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideLeftTablet {
+  0% {
+    transform: translateX(670px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideLeftLaptop {
+  0% {
+    transform: translateX(960px);
   }
   50% {
     transform: translateX(0px);
@@ -634,11 +672,24 @@ footer .logo-color {
   padding: 54px 20px 66px 20px;
 }
 
+.menu__restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+}
 .menu__restaurant img {
   height: 275px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 100% 60%;
+     object-position: 100% 60%;
+}
+@media (min-width: 767.98px) {
+  .menu__restaurant img {
+    height: 380px;
+  }
 }
 .menu__restaurant form {
   background: #F6F6F6;
@@ -652,10 +703,28 @@ footer .logo-color {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 767.98px) {
+  .menu__restaurant form {
+    width: 758px;
+  }
+}
+@media (min-width: 1439.98px) {
+  .menu__restaurant form {
+    width: 1055px;
+  }
+}
 .menu__restaurant form .menu__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 767.98px) {
+  .menu__restaurant form .menu__title {
+    justify-content: center;
+  }
+  .menu__restaurant form .menu__title h1 {
+    margin-right: 24px;
+  }
 }
 .menu__restaurant form .menu__title .card__icon {
   margin-right: 20px;
@@ -673,4 +742,5 @@ footer .logo-color {
   width: 186px;
   margin-top: 40px;
   margin-bottom: 40px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

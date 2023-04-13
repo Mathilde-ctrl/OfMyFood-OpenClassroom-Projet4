@@ -126,18 +126,26 @@
 
   
   .menu__checkbox{
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
-  margin-right: 15px;
+    margin-right: 15px;
   
-  animation: slideLeft 0.4s ease-in-out;
+    animation: slideLeftMobile 0.5s ease-in-out;
+
+    @media (min-width: 768px){
+      animation: slideLeftTablet 0.5s ease-in-out;
+    }
+
+    @media (min-width:1439.98px){
+      animation: slideLeftLaptop 0.5s ease-in-out;
+    }
   }
 }
 
-@keyframes slideLeft{
+@keyframes slideLeftMobile{
   0% {
     transform: translateX(80vw);
   }
@@ -151,6 +159,38 @@
     transform: translateX(0%);
   }
 }
+
+@keyframes slideLeftTablet{
+  0% {
+    transform: translateX(670px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideLeftLaptop{
+  0% {
+    transform: translateX(960px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  80% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 
 /*************************ANIMATION Opacity menu card*************************/
 
