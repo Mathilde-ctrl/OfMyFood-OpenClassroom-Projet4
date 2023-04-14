@@ -475,6 +475,60 @@ body {
   }
 }
 /*************************ANIMATION Opacity menu card*************************/
+/*.menu__starters, .menu__meals, .menu__desserts, .menu__card {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu__starters{
+  animation-delay: 0.25s;
+
+  .starter2 {
+    animation-delay: 0.35s;
+  }
+
+  .starter3 {
+    animation-delay: 0.45s;
+  }
+
+  .starter4 {
+    animation-delay: 0.55s;
+  }
+}
+
+.menu__meals{
+  animation-delay: 0.65s;
+
+  .meal2{
+    animation-delay: 0.75s ;
+  }
+
+  .meal3{
+    animation-delay: 0.85s ;
+  }
+}
+
+.menu__desserts{
+  animation-delay: 1.05s;
+
+  .dessert2{
+    animation-delay: 1.15s;
+  }
+
+  .dessert3{
+    animation-delay: 1.25s;
+  }
+}
+*/
 .menu__starters, .menu__meals, .menu__desserts, .menu__card {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
@@ -497,25 +551,88 @@ body {
 .menu__starters .starter3 {
   animation-delay: 0.45s;
 }
-
-.menu__meals {
+.menu__starters .starter4 {
+  animation-delay: 0.55s;
+}
+.menu__starters .starter5 {
   animation-delay: 0.65s;
 }
-.menu__meals .meal2 {
+.menu__starters .starter6 {
   animation-delay: 0.75s;
 }
-.menu__meals .meal3 {
+.menu__starters .starter7 {
   animation-delay: 0.85s;
+}
+.menu__starters .starter8 {
+  animation-delay: 0.95s;
+}
+.menu__starters .starter9 {
+  animation-delay: 1.05s;
+}
+.menu__starters .starter10 {
+  animation-delay: 1.15s;
+}
+
+.menu__meals {
+  animation-delay: 0.75s;
+}
+.menu__meals .meal2 {
+  animation-delay: 0.85s;
+}
+.menu__meals .meal3 {
+  animation-delay: 0.95s;
+}
+.menu__meals .meal4 {
+  animation-delay: 1.05s;
+}
+.menu__meals .meal5 {
+  animation-delay: 1.15s;
+}
+.menu__meals .meal6 {
+  animation-delay: 1.25s;
+}
+.menu__meals .meal7 {
+  animation-delay: 1.35s;
+}
+.menu__meals .meal8 {
+  animation-delay: 1.45s;
+}
+.menu__meals .meal9 {
+  animation-delay: 1.55s;
+}
+.menu__meals .meal10 {
+  animation-delay: 1.65s;
 }
 
 .menu__desserts {
-  animation-delay: 1.05s;
+  animation-delay: 1.25s;
 }
 .menu__desserts .dessert2 {
-  animation-delay: 1.15s;
+  animation-delay: 1.35s;
 }
 .menu__desserts .dessert3 {
-  animation-delay: 1.25s;
+  animation-delay: 1.45s;
+}
+.menu__desserts .dessert4 {
+  animation-delay: 1.55s;
+}
+.menu__desserts .dessert5 {
+  animation-delay: 1.65s;
+}
+.menu__desserts .dessert6 {
+  animation-delay: 1.75s;
+}
+.menu__desserts .dessert7 {
+  animation-delay: 1.85s;
+}
+.menu__desserts .dessert8 {
+  animation-delay: 1.95s;
+}
+.menu__desserts .dessert9 {
+  animation-delay: 2.05s;
+}
+.menu__desserts .dessert10 {
+  animation-delay: 2.15s;
 }
 
 header {

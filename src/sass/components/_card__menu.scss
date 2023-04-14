@@ -194,8 +194,7 @@
 
 /*************************ANIMATION Opacity menu card*************************/
 
-
-.menu__starters, .menu__meals, .menu__desserts, .menu__card {
+/*.menu__starters, .menu__meals, .menu__desserts, .menu__card {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
 }
@@ -218,6 +217,10 @@
   
   .starter3 {
     animation-delay: 0.45s;
+  }
+
+  .starter4 {
+    animation-delay: 0.55s;
   }
 }
 
@@ -244,7 +247,50 @@
     animation-delay: 1.25s;
   }
 }
+*/
 
+.menu__starters, .menu__meals, .menu__desserts, .menu__card {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu__starters {
+  animation-delay: utilities.$starters-delay;
+  
+  @for $i from 2 through 10 { //Sass Loop 
+    .starter#{$i} {
+      animation-delay: utilities.$starters-delay + ($i - 1 ) * utilities.$dish-step;
+    }
+  }
+}
+
+.menu__meals {
+  animation-delay: utilities.$meal-delay;
+  
+  @for $i from 2 through 10 {
+    .meal#{$i} {
+      animation-delay: utilities.$meal-delay + ($i - 1 ) * utilities.$dish-step;
+    }
+  }
+}
+
+.menu__desserts {
+  animation-delay: utilities.$dessert-delay;
+  
+  @for $i from 2 through 10 {
+    .dessert#{$i} {
+      animation-delay: utilities.$dessert-delay + ($i - 1) * utilities.$dish-step;
+    }
+  }
+}
 
 
