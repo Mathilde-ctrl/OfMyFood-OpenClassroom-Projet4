@@ -437,13 +437,13 @@ body {
     transform: translateX(80vw);
   }
   50% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   80% {
     transform: translateX(15px);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
 @keyframes slideLeftTablet {
@@ -730,6 +730,71 @@ footer .logo-color {
 
 .main-container {
   width: 100%;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #EAEAEA;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: loaderPage 0.25s ease-out forwards;
+  animation-delay: 2s;
+}
+.loader div {
+  margin-top: 200px;
+  position: relative;
+  animation: titleEnd 0.25s ease-in-out forwards;
+  animation-delay: 1.75s;
+}
+.loader .loaderneutral {
+  font-size: 48px;
+  z-index: -1;
+  opacity: 1;
+  line-height: 48px;
+}
+.loader .loaderactive {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 48px;
+  width: 0;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 48px;
+  animation: titleColor 1.5s ease-out forwards;
+  animation-delay: 0.25s;
+}
+@keyframes titleColor {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 110%;
+  }
+}
+@keyframes titleEnd {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loaderPage {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    z-index: -10;
+  }
 }
 
 .localisation {
