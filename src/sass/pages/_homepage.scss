@@ -1,99 +1,17 @@
 @use '../utilities';
-// Loader
 
-.loader{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background-color: utilities.$neutral-third-color ;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-  animation: loaderPage 0.25s ease-out forwards;
-  animation-delay: 2s;
-
-  div{
-    margin-top: 200px;
-    position: relative;
-
-    animation:titleEnd 0.25s ease-in-out forwards;
-    animation-delay: 1.75s;
-  }
-
-  .loaderneutral{
-    font-size: 48px;
-    z-index: -1;
-    opacity: 1;
-    line-height: 48px;
-  }
-
-  .loaderactive{
-    
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    font-size: 48px;
-    width: 0;
-    background:linear-gradient(to right, utilities.$second-color ,utilities.$main-color );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    line-height: 48px;
-
-    animation: titleColor 1.5s ease-out forwards;
-    animation-delay: 0.25s;
-    
-    
-  }  
-
-  @keyframes titleColor {
-    0% {
-      width: 0;
-    }  
-    100% {
-      width: 110%; //Cover the all title
-    }
-  }
-
-  @keyframes titleEnd {
-    0%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
-
-  @keyframes loaderPage {
-    0% {
-      width: 100%;
-    }
-
-    100% {
-    width: 0;
-    z-index: -10;
-    }
-  }
-}
 
 // Section
 .localisation{
   background-color: utilities.$neutral-third-color;
-  height: 50px;
+  height: 5rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   i{
-    margin-right: 17px;
-  }
-
-  p{
-    font-size: 16px;
+    margin-right: 1.7rem;
   }
 }
 
@@ -102,40 +20,34 @@
   text-align: center;
 
   h2{
-   margin-top: 39.5px;
+   margin-top: 3.95rem;
    padding: 0 58px 0 42px;
 
    @media (min-width:767.98px){
-    margin-top: 30px;
+    margin-top: 3rem;
     padding: 0;
    }
 
    @media (min-width:1023.98px){
-    font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
    }
   }
   p{
-    margin: 0px 26px 27px 34px;
-    font-weight: 300;
-
-    @media (min-width:1023.98px){
-      font-size: 18px;
-     }
+    margin: 0 2.6rem 2.7rem 3.4rem;
   }
 }
 
 // Section 
 .how-to{
   background-color: utilities.$neutral-second-color;
-  padding: 48px 20px 68px 20px;
+  padding: 4.8rem 2rem 6.8rem 2rem;
 
   @media (min-width:767.98px){
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
   }
 }
 
 // Section
 .restaurants{
-  padding: 54px 20px 66px 20px;
+  padding: 5.4rem 2rem 6.6rem 2rem;
 }

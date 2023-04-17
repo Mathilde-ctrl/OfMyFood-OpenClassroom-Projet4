@@ -1,8 +1,7 @@
 
-
 html{
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body{ //reset against default style made by browsers
@@ -13,3 +12,6 @@ body{ //reset against default style made by browsers
   width: 100%;
 }
 
+.main-container{
+  width: 100%;
+}

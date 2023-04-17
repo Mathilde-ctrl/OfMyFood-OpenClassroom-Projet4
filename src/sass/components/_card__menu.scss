@@ -3,12 +3,12 @@
 .menu__card{
   background-color: utilities.$neutral-second-color;
 
-  margin: 12px 0;
-  padding: 12px 15px;
+  margin: 1.2rem 0;
+  padding: 1.2rem 1.5rem;
   padding-right: 0;
-  border-radius: 15px;
-  height: 69px;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  height: 6.9rem;
+  box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.1);
 
   display: flex;
   align-items: center;
@@ -27,29 +27,29 @@
       position: absolute;
       display: flex;//
       right: 5%;
-      padding-left: 5px;
+      padding-left: 0.5rem;
     }
 
     .menu__dish--description p{
-      width: 220px ;
+      width: 22rem ;
 
       @media (min-width:374.98px){
         width: 100%;
       }
     }
-    
   }
 
   .menu__checkbox{
-    height: 69px;
+    height: 6.9rem;
     
     background: utilities.$third-color;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 
     order:1;
 
@@ -76,20 +76,21 @@
 .menu__card:hover{ 
   .menu__checkbox{
     display: flex;
-    width: 59px ;
+    width: 5.9rem;
   }
 
   .menu__dish--description h5 {
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
-    width: 225px;
+
+    width: 22.5rem;
 
     @media (min-width:374.98px){
-      width:280px ;
+      width:28rem;
     }
     @media (min-width:424.98px){
-      width:320px ;
+      width:32rem;
     }
   }
   
@@ -97,13 +98,13 @@
     overflow: hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
-    width: 185px;
+    width: 18.5rem;
 
     @media (min-width:374.98px){
-      width:240px ;
+      width:24rem;
     }
     @media (min-width:424.98px){
-      width:290px ;
+      width:29rem;
     }
   }
   .fa-check, .fa-circle{
@@ -120,7 +121,6 @@
 
 /************************ACTIVE menu card**********************/
 .menu__card:active{ 
-  order: -1;
   flex-direction: row-reverse;
   padding-left: 0;
 
@@ -128,10 +128,10 @@
   .menu__checkbox{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 
-    margin-right: 15px;
+    margin-right: 1.5rem;
   
     animation: slideLeftMobile 0.5s ease-in-out;
 
@@ -153,7 +153,7 @@
     transform: translateX(0);
   }
   80% {
-    transform: translateX(15px);
+    transform: translateX(1.8rem);
   }
   100% {
     transform: translateX(0);
@@ -162,93 +162,37 @@
 
 @keyframes slideLeftTablet{
   0% {
-    transform: translateX(670px);
+    transform: translateX(67rem);
   }
   50% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   80% {
-    transform: translateX(15px);
+    transform: translateX(1.8rem);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
 
 @keyframes slideLeftLaptop{
   0% {
-    transform: translateX(960px);
+    transform: translateX(96rem);
   }
   50% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   80% {
-    transform: translateX(15px);
+    transform: translateX(1.8rem);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 }
 
 
 
 /*************************ANIMATION Opacity menu card*************************/
-
-/*.menu__starters, .menu__meals, .menu__desserts, .menu__card {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.menu__starters{
-  animation-delay: 0.25s;
-
-  .starter2 {
-    animation-delay: 0.35s;
-  }
-  
-  .starter3 {
-    animation-delay: 0.45s;
-  }
-
-  .starter4 {
-    animation-delay: 0.55s;
-  }
-}
-
-.menu__meals{
-  animation-delay: 0.65s;
-
-  .meal2{
-    animation-delay: 0.75s ;
-  }
-
-  .meal3{
-    animation-delay: 0.85s ;
-  }
-}
-
-.menu__desserts{
-  animation-delay: 1.05s;
-
-  .dessert2{
-    animation-delay: 1.15s;
-  }
-
-  .dessert3{
-    animation-delay: 1.25s;
-  }
-}
-*/
-
 .menu__starters, .menu__meals, .menu__desserts, .menu__card {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;

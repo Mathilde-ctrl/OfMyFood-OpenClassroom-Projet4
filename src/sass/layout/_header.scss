@@ -2,7 +2,7 @@
 
 header{
   background-color: utilities.$neutral-second-color;
-  height: 63px;
+  height: 6.3rem;
 
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@ header{
 
   position: relative;
 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.15);
   nav{
     position: absolute;
     left: 5%;
@@ -20,7 +20,7 @@ header{
     }
   }
   img{
-    height: 30px;
+    height: 3rem;
   } 
   @media (min-width:1023.98px){
     box-shadow: none;

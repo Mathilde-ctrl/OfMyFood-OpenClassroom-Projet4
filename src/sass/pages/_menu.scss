@@ -7,13 +7,13 @@
   background: utilities.$neutral-second-color;
 
   img{
-    height: 275px ;
+    height: 27.5rem ;
     width: 100%;
     object-fit: cover;
     object-position: 100% 60%;
 
     @media (min-width:767.98px){
-      height: 380px;
+      height: 38rem;
     }
 
     //position: relative;
@@ -24,25 +24,25 @@
     width: 100%;
     box-sizing: border-box;
 
-    padding: 32px 13px;
-    border-top-right-radius: 40px ;
-    border-top-left-radius: 40px ;
+    padding: 3.2rem 1.3rem;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
  
     //position: absolute;
     //top: 280px;
 
-    margin-top: -40px; //pbm with footer if use position absolute
+    margin-top: -4rem; //pbm with footer if use position absolute
     position: relative;
     
     display: flex;
     flex-direction: column;
 
     @media (min-width:767.98px){
-      width: 758px ;     
+      width: 75.8rem ;     
      }
   
      @media (min-width:1439.98px){
-      width: 1055px ;
+      width: 105.5rem ;
      }
 
     .menu__title{
@@ -53,31 +53,31 @@
       @media (min-width:767.98px){
         justify-content: center;
         h1{
-          margin-right: 24px;
+          margin-right: 2.4rem;
         }    
        }
 
       .card__icon{
-        margin-right: 20px;
+        margin-right: 2rem;
       }
     }
 
     .menu__subtitles{
       .menu__subtitles-name{
-        margin-top: 30px;
-        margin-bottom: 5px;
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
       }
 
       .menu__line {
-        border-bottom: 3px solid utilities.$third-color;
-        width: 40px;
+        border-bottom: 0.3rem solid utilities.$third-color;
+        width: 4rem;
       }
     }
     button{
       margin: auto;
-      width: 186px;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      width: 18.6rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       cursor: pointer;
 
     }

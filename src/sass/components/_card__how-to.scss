@@ -9,17 +9,17 @@
   justify-content: center;
   align-items: center;
   
-  padding: 28px 38px;
-  border-radius: 20px;
-  margin-left: 12px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 2.8rem 3.8rem;
+  border-radius: 2rem;
+  margin-left: 1.2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
 
   position: relative;
 
   @media (min-width:767.98px){
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
     width: 50% ;
    }
   
@@ -30,16 +30,11 @@
 
   .icon-number{
     position: absolute;
-    left: -14px;
+    left: -1.2rem;
 
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
-
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17px;
 
     background-color: utilities.$main-color;
     color: utilities.$neutral-second-color;
@@ -65,16 +60,15 @@
   .how-to__container{
     display: flex;
     flex-direction: row;
-    max-width: 1024px;
-    margin: auto;
     justify-content: space-between;
-    
+    max-width: 1024px;
+    margin: auto; 
   }
 
   .how-to__title{
     max-width: 1024px;
     margin: auto;
-    margin-bottom: 25px ;
+    margin-bottom: 2.5rem ;
   }  
 }
 

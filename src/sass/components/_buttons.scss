@@ -9,16 +9,16 @@
   color: white;
   background: linear-gradient( utilities.$second-color ,utilities.$main-color );
   
-  padding: 13px 18.75px;
-  margin-bottom: 57px ;
-  border-radius:25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  padding: 1.3rem 1.87rem;
+  margin-bottom: 5.7rem ;
+  border-radius:2.5rem;
+  box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.25);
 
   transition: all 0.2s ease-in-out; // transition for smooth effect
   
   @media (min-width:767.98px){
-    margin-bottom: 30px;
-   }
+    margin-bottom: 3rem;
+  }
 
   &:hover{
     opacity: 0.85;

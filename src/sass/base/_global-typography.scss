@@ -1,10 +1,14 @@
 @use '../utilities';
 
 h1{
+  font-size: 2.8rem;
   font-family: 'Shrikhand', cursive;
-  line-height: 40.82px;
   font-weight: 400;
   margin: 0;
+
+  @media (max-width:374.98px){
+    font-size: 2.6rem;
+  }
 }
 
 p{
@@ -13,50 +17,117 @@ p{
   margin-bottom: 0;  
 }
 
-
 h1, h2, h3, h5{ //multiple selectors
   margin-top: 0;
 }
 
 h2{
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 28.13px;
 }
 
 h3{
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 21.09px;
 }
 
 h4{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 h5{
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
-
 
 a, a:visited, a:active{ //remove the defaut text underline that browsers use
   text-decoration: none;
 }
 
+//-----------------------BUTTONS
 .cta{
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
-.menu__dish{
-  font-size: 15px;
-  font-weight: 300;
+//-----------------------SECTION LOCALISATION
+.localisation p{
+  font-size: 1.6rem;
+}
 
+//-----------------------SECTION INFORMATION
+.informations { 
+  h2{
+    @media (min-width:1023.98px){
+      font-size: 4rem;
+    }
+  }
+  p{
+  font-size:1.8rem ;
+  font-weight: 300;
+  
+    @media (min-width:1023.98px){
+      font-size: 1.8rem;
+    }
+  }
+}
+
+//-------------------------SECTION HOW-TO
+.how-to__card {
+  p{
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .icon-number{
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+//-------------------------SECTION RESTAURANT
+.restaurants__card{
+  p{
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .card__badge{
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+//--------------------------FOOTER
+footer{
+  a{
+  font-weight: 500;
+  font-size: 1.6rem;
+    &:nth-child(3), &:nth-child(4) {
+      font-weight: 400;
+    }
+  }
+}
+
+//---------------------------SECTION MENU__DISH
+.menu__dish {
+  font-size: 1.5rem;
+  font-weight: 300;
+  
   .menu__dish--price{
     font-weight: 700;
   }
+}
+
+//---------------------------LOADER
+.loaderneutral{
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+
+.loaderactive{
+  font-size: 4.8rem;
+  line-height: 4.8rem;
 }
