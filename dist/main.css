@@ -105,12 +105,7 @@ footer a:nth-child(3), footer a:nth-child(4) {
   font-weight: 700;
 }
 
-.loaderneutral {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-}
-
-.loaderactive {
+.loaderneutral, .loaderactive {
   font-size: 4.8rem;
   line-height: 4.8rem;
 }
@@ -383,8 +378,26 @@ body {
   right: 5%;
   padding-left: 0.5rem;
 }
-.menu__card .menu__dish .menu__dish--description p {
-  width: 22rem;
+@media (max-width: 374.97px) {
+  .menu__card .menu__dish .menu__dish--description h5 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 26rem;
+  }
+}
+@media (min-width: 374.98px) {
+  .menu__card .menu__dish .menu__dish--description h5 {
+    width: 100%;
+  }
+}
+@media (max-width: 374.97px) {
+  .menu__card .menu__dish .menu__dish--description p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 22rem;
+  }
 }
 @media (min-width: 374.98px) {
   .menu__card .menu__dish .menu__dish--description p {
