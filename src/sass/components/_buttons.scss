@@ -1,10 +1,9 @@
 @use '../utilities';
 
-// cta buttons
+//---------------------------cta buttons
 
 .cta{
   display: inline-block;
-  
   border: 0;
   color: white;
   background: linear-gradient( utilities.$second-color ,utilities.$main-color );
@@ -14,15 +13,13 @@
   border-radius:2.5rem;
   box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.25);
 
-  transition: all 0.2s ease-in-out; // transition for smooth effect
+  transition: opacity 0.25s ease-in; // transition for smooth effect
   
   @media (min-width:767.98px){
     margin-bottom: 3rem;
   }
-
   &:hover{
-    opacity: 0.85;
+    opacity:0.85;
   }
-  
 }
 

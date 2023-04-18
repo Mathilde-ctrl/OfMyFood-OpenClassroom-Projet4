@@ -1,15 +1,14 @@
 @use '../utilities';
 
-/*****************Animation icon ************/
+//-----------------------------------Animation icon 
 .card__icon{
   line-height: 1.5em; //keep the icon fully visible
-  position: relative;//keep the active icon in it place on menu
+  position: relative; //keep the active icon in it place on menu
 }
 
 .neutral-icon {
-  position: relative;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out ;
   //start
 }
 
@@ -18,8 +17,8 @@
   top: 0;
   height: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-  
+  transition: opacity 0.15s ease-out, height 0.15s ease-in-out ;
+
   background: -webkit-linear-gradient(utilities.$main-color, utilities.$second-color);
   -webkit-background-clip: text;
   background-clip: text;//define the standard property for compatibility
@@ -27,10 +26,10 @@
   //end
 }
 
-.card__icon:hover {
+.card__icon:hover{
   animation: headshake 0.3s ease-in-out;
   animation-iteration-count: 2;
-  animation-delay: 0.3s;
+  animation-delay: 0.15s;
 
   .active-icon {
     opacity: 1;

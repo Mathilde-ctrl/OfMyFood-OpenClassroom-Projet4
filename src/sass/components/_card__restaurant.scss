@@ -1,6 +1,6 @@
 @use '../utilities';
 
-//Restaurants
+//---------------------------------Restaurants
 .restaurants__card {
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 
   @media (min-width:1023.98px){
     margin-bottom: 5rem;
-    width: 45%;
+    width: 50%;
     margin-left: 0;
   }
 
@@ -70,13 +70,14 @@
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
     background-color: utilities.$third-color;
     color: utilities.$fourth-color;
   }
 }
 
-//Img positions and Badges in cards
+//--------------------------------Img positions and Badges in cards
 
 .card-1{
   img{

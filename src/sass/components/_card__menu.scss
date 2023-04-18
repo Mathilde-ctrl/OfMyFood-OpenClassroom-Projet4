@@ -26,30 +26,30 @@
     .menu__dish--price{
       position: absolute;
       display: flex;//
-      right: 5%;
+      right: 1.6rem;
       padding-left: 0.5rem;
     }
 
     .menu__dish--description h5 {
-      @media (max-width:374.97px){
+      @media (max-width:360px){
         overflow: hidden;
         white-space:nowrap;
         text-overflow: ellipsis;
         width: 26rem;
       }
-      @media (min-width:374.98px){
+      @media (min-width:360px){
         width: 100%;
       }
     }
 
     .menu__dish--description p{
-      @media (max-width:374.97px){
+      @media (max-width:360px){
         overflow: hidden;
         white-space:nowrap;
         text-overflow: ellipsis;
         width: 22rem;
       }
-      @media (min-width:374.98px){
+      @media (min-width:360px){
         width: 100%;
       }
     }
@@ -83,7 +83,8 @@
   }
 }
 
-/*********************HOVER text menu card******************/
+//------------------------------HOVER text menu card
+
 .menu__checkbox{
   width: 0;
   transition: width 0.25s cubic-bezier(.22,.76,.69,.93);
@@ -91,7 +92,6 @@
 
 .menu__card:hover{ 
   .menu__checkbox{
-    display: flex;
     width: 5.9rem;
   }
 
@@ -131,11 +131,11 @@
 .menu__card:not(:hover) {
   .menu__checkbox {
     width: 0;
-    transition: width 0.25s cubic-bezier(.88,.26,1,.81);
+    transition: width 0.3s cubic-bezier(.88,.26,1,.81);
   }
 }
 
-/************************ACTIVE menu card**********************/
+//------------------------------------------ACTIVE menu card
 .menu__card:active{ 
   flex-direction: row-reverse;
   padding-left: 0;
@@ -208,7 +208,8 @@
 
 
 
-/*************************ANIMATION Opacity menu card*************************/
+//----------------------------------ANIMATION Opacity menu card
+
 .menu__starters, .menu__meals, .menu__desserts, .menu__card {
   opacity: 0;
   animation: fadeIn 0.5s ease-in-out forwards;
@@ -252,5 +253,3 @@
     }
   }
 }
-
-
