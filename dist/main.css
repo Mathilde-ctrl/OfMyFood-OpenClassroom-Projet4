@@ -23,23 +23,27 @@ h1, h2, h3, h5 {
 h2 {
   font-size: 2.4rem;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: "Roboto", sans-serif;
 }
 
 h4 {
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
 h5 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 a, a:visited, a:active {
@@ -49,6 +53,7 @@ a, a:visited, a:active {
 .cta {
   font-size: 1.6rem;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 .localisation p {
@@ -87,11 +92,13 @@ a, a:visited, a:active {
 .restaurants__card .card__badge {
   font-size: 1.4rem;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 footer a {
   font-weight: 500;
   font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
 }
 footer a:nth-child(3), footer a:nth-child(4) {
   font-weight: 400;
@@ -115,7 +122,6 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #F6F6F6;
@@ -374,7 +380,7 @@ body {
   right: 1.6rem;
   padding-left: 0.5rem;
 }
-@media (max-width: 360px) {
+@media (max-width: 374.98px) {
   .menu__card .menu__dish .menu__dish--description h5 {
     overflow: hidden;
     white-space: nowrap;
@@ -382,12 +388,12 @@ body {
     width: 26rem;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 374.98px) {
   .menu__card .menu__dish .menu__dish--description h5 {
     width: 100%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 374.98px) {
   .menu__card .menu__dish .menu__dish--description p {
     overflow: hidden;
     white-space: nowrap;
@@ -395,7 +401,7 @@ body {
     width: 22rem;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 374.98px) {
   .menu__card .menu__dish .menu__dish--description p {
     width: 100%;
   }
@@ -671,7 +677,7 @@ body {
   margin-top: 20rem;
 }
 .loader .loaderactive {
-  background: linear-gradient(to right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

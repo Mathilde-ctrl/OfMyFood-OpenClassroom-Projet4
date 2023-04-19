@@ -19,28 +19,33 @@ p{
 
 h1, h2, h3, h5{ //multiple selectors
   margin-top: 0;
+
 }
 
 h2{
   font-size: 2.4rem;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3{
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4{
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
 h5{
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 a, a:visited, a:active{ //remove the defaut text underline that browsers use
@@ -51,6 +56,7 @@ a, a:visited, a:active{ //remove the defaut text underline that browsers use
 .cta{
   font-size: 1.6rem;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 //-----------------------SECTION LOCALISATION
@@ -97,6 +103,7 @@ a, a:visited, a:active{ //remove the defaut text underline that browsers use
   .card__badge{
     font-size: 1.4rem;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -105,6 +112,7 @@ footer{
   a{
   font-weight: 500;
   font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
     &:nth-child(3), &:nth-child(4) {
       font-weight: 400;
     }

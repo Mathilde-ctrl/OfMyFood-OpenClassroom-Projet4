@@ -31,28 +31,29 @@
     }
 
     .menu__dish--description h5 {
-      @media (max-width:360px){
+      @media (max-width:374.98px){
         overflow: hidden;
         white-space:nowrap;
         text-overflow: ellipsis;
         width: 26rem;
       }
-      @media (min-width:360px){
+      @media (min-width:374.98px){
         width: 100%;
       }
     }
 
     .menu__dish--description p{
-      @media (max-width:360px){
+      @media (max-width:374.98px){
         overflow: hidden;
         white-space:nowrap;
         text-overflow: ellipsis;
         width: 22rem;
       }
-      @media (min-width:360px){
+      @media (min-width:374.98px){
         width: 100%;
       }
     }
+    
   }
 
   .menu__checkbox{
