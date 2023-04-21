@@ -6,6 +6,7 @@
   margin: 1.2rem 0;
   padding: 1.2rem 1.5rem;
   padding-right: 0;
+
   border-radius: 1.5rem;
   height: 6.9rem;
   box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -25,7 +26,6 @@
 
     .menu__dish--price{
       position: absolute;
-      display: flex;//
       right: 1.6rem;
       padding-left: 0.5rem;
     }
@@ -37,9 +37,6 @@
         text-overflow: ellipsis;
         width: 26rem;
       }
-      @media (min-width:374.98px){
-        width: 100%;
-      }
     }
 
     .menu__dish--description p{
@@ -49,11 +46,7 @@
         text-overflow: ellipsis;
         width: 22rem;
       }
-      @media (min-width:374.98px){
-        width: 100%;
-      }
     }
-    
   }
 
   .menu__checkbox{
@@ -67,30 +60,26 @@
 
     border-top-right-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-
-    order:1;
+    
+    width: 0;
+    transition: width 0.2s cubic-bezier(.22,.76,.69,.93);
 
     .fa-circle{
       color: white;
       position: relative;
       display: none;
     }
+
     .fa-check{
       color: utilities.$third-color;
       position: absolute;
-      z-index: 1;
+      z-index: 10;
       display: none;
     }
   }
 }
 
 //------------------------------HOVER text menu card
-
-.menu__checkbox{
-  width: 0;
-  transition: width 0.25s cubic-bezier(.22,.76,.69,.93);
-}
-
 .menu__card:hover{ 
   .menu__checkbox{
     width: 5.9rem;
@@ -124,6 +113,7 @@
       width:29rem;
     }
   }
+  
   .fa-check, .fa-circle{
     display: flex;
   }
@@ -131,7 +121,6 @@
 
 .menu__card:not(:hover) {
   .menu__checkbox {
-    width: 0;
     transition: width 0.3s cubic-bezier(.88,.26,1,.81);
   }
 }
@@ -152,7 +141,7 @@
   
     animation: slideLeftMobile 0.5s ease-in-out;
 
-    @media (min-width: 768px){
+    @media (min-width: 767.98px){
       animation: slideLeftTablet 0.5s ease-in-out;
     }
 

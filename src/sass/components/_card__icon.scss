@@ -8,7 +8,7 @@
 
 .neutral-icon {
   opacity: 1;
-  transition: opacity 0.15s ease-in-out ;
+  transition: opacity 0.25s ease-in-out;
   //start
 }
 
@@ -17,7 +17,7 @@
   top: 0;
   height: 0;
   opacity: 0;
-  transition: opacity 0.15s ease-out, height 0.15s ease-in-out ;
+  transition: opacity 0.25s ease-out, height 0.25s ease-in-out ;
 
   background: -webkit-linear-gradient(utilities.$main-color, utilities.$second-color);
   -webkit-background-clip: text;
@@ -27,9 +27,9 @@
 }
 
 .card__icon:hover{
-  animation: headshake 0.3s ease-in-out;
+  animation: headshake 0.25s ease-in-out;
   animation-iteration-count: 2;
-  animation-delay: 0.15s;
+  animation-delay: 0.3s;
 
   .active-icon {
     opacity: 1;
@@ -43,9 +43,9 @@
 
 @keyframes headshake {
   25% {
-      transform: translateY(utilities.$shake-intensity);
+    transform: translateY(utilities.$shake-intensity);
   }
   75% {
-      transform: translateY(utilities.$shake-intensity * -1);
+    transform: translateY(utilities.$shake-intensity * -1);
   }
 }

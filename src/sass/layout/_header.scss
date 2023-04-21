@@ -18,11 +18,13 @@ header{
       color:utilities.$neutral-fourth-color;
     }
   }
+
   img{
     height: 3rem;
   } 
+
   @media (min-width:1023.98px){
     box-shadow: none;
-   }
+  }
 }
 

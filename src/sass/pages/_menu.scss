@@ -39,11 +39,11 @@
 
     @media (min-width:767.98px){
       width: 75.8rem ;     
-     }
+    }
   
-     @media (min-width:1439.98px){
+    @media (min-width:1439.98px){
       width: 105.5rem ;
-     }
+    }
     
     .menu__title{
       display: flex;
@@ -52,10 +52,11 @@
       
       @media (min-width:767.98px){
         justify-content: center;
+
         h1{
           margin-right: 2.4rem;
         }    
-       }
+      }
 
       .card__icon{
         margin-right: 2rem;
@@ -73,13 +74,13 @@
         width: 4rem;
       }
     }
+    
     button{
       margin: auto;
       width: 18.6rem;
       margin-top: 4rem;
       margin-bottom: 4rem;
       cursor: pointer;
-
     }
   }
 }
